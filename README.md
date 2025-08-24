@@ -1,5 +1,24 @@
 # CodeBillion
-Install The Required Packages From requirements.txt file 
-Command : "pip install -r requirements.txt"
 
-Add The Config.py File Inside The src Folder And The Template For The Config File Has Been Given In the Templates Folder
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Chaitu5210/CodeBillion.git
+   cd CodeBillion
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Configure your API keys**
+   Create `src/config.py` and add your Upstox API credentials. You can refer to the template in the `templates` folder.
+
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
