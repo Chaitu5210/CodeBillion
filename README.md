@@ -14,8 +14,9 @@
 3. **Configure your API keys**
    Create `src/config.py` and add your Upstox API credentials. You can refer to the template in the `templates` folder.
 
+```bash
 Current Model Accuracy - 0%
-
+```
 
 ## 📄 License
 
