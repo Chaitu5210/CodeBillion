@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from auth.auth_code_url_generator import AuthCodeUrlGenerator
+from production.auth.auth_code_url_generator import AuthCodeUrlGenerator
 from production.auth.get_access_token import getAccessToken
 
 
