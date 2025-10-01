@@ -10,5 +10,5 @@ state = os.getenv("sandbox_state")
 access_token = os.getenv("sandbox_access_token")
 
 
-def sandbox_orchestrator():
+def SandboxOrchestrator():
     print("Inside SandBox Environment")
