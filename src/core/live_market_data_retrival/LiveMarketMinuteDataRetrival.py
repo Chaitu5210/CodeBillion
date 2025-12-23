@@ -19,7 +19,7 @@ CHUNK_SIZE = 200
 API_VERSION = "2.0"
 SLEEP_BETWEEN_CALLS = 0.25
 
-def load_instruments(path: str) -> (List[str], Dict[str, str]):
+def load_instruments(path: str) -> (List[str], Dict[str, str]): # pyright: ignore[reportInvalidTypeForm]
     keys: List[str] = []
     key_to_name: Dict[str, str] = {}
     with open(path, "r", encoding="utf-8") as f:

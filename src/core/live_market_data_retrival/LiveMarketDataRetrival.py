@@ -3,7 +3,6 @@ from typing import List, Dict
 
 import upstox_client
 from upstox_client.rest import ApiException
-from Compute import start_computation
 ACCESS_TOKEN = ""
 
 INSTRUMENT_FILE = "stocks_only.txt"
@@ -14,7 +13,7 @@ CHUNK_SIZE = 200
 API_VERSION = "2.0"
 SLEEP_BETWEEN_CALLS = 0.25
 
-def load_instruments(path: str) -> (List[str], Dict[str, str]):
+def load_instruments(path: str) -> (List[str], Dict[str, str]): # pyright: ignore[reportInvalidTypeForm]
     keys: List[str] = []
     key_to_name: Dict[str, str] = {}
     with open(path, "r", encoding="utf-8") as f:
@@ -117,7 +116,6 @@ def main():
         print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Got LTP for {len(prices)} instruments")
         write_prices_to_file(OUTPUT_FILE, prices, key_to_name, instrument_keys)
         print(f"Wrote latest LTPs to {OUTPUT_FILE}")
-        start_computation()
         elapsed = time.time() - loop_start
         sleep_for = max(0, 60 - elapsed)
         time.sleep(sleep_for)

@@ -8,7 +8,7 @@ from collections import defaultdict
 
 import pandas as pd
 
-from core.strategy_testing.StrategyTestBed import strategy_logic
+from core.strategy_testing.StrategyTestBed import strategy_logic # type: ignore
 
 """
 Backtests multiple intraday trading strategies using minute-level price data.
