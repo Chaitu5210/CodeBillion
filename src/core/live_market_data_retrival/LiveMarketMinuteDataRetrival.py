@@ -123,7 +123,6 @@ def main():
         print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] Got LTP for {len(prices)} instruments")
         write_prices_to_file(prices, key_to_name, instrument_keys)
         print(f"Wrote latest LTPs to {PURE_DATA_DIR}")
-        start_computation()
         elapsed = time.time() - loop_start
         sleep_for = max(0, 60 - elapsed)
         time.sleep(sleep_for)
