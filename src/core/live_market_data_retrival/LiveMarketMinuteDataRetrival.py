@@ -5,7 +5,6 @@ from datetime import datetime
 
 import upstox_client
 from upstox_client.rest import ApiException
-from Compute import start_computation
 ACCESS_TOKEN = ""
 
 INSTRUMENT_FILE = "stocks_only.txt"
