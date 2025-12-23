@@ -3,6 +3,18 @@ import time
 import upstox_client
 from upstox_client.rest import ApiException
 
+"""
+Fetches daily OHLCV (Open, High, Low, Close, Volume) data for multiple stocks
+from the Upstox API and saves it to a text file.
+- Reads stock names and instrument keys from Resources/Stocks.txt
+- Fetches historical daily candle data for a given date
+- Stores results in Resources/ohlcv_<date>.txt
+- Uses a fixed delay between requests to avoid API rate limits
+- Handles missing data or API errors safely
+Usage:
+    fetch_all_ohlcv("YYYY-MM-DD")
+"""
+
 ACCESS_TOKEN = "YOUR_ACCESS_TOKEN"
 API_VERSION = "2.0"
 
