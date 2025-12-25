@@ -21,8 +21,10 @@ API_VERSION = "2.0"
 REQUEST_DELAY = 0.35   # ~3 requests/sec (SAFE)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESOURCES_DIR = os.path.join(BASE_DIR, "Resources")
-STOCK_FILE = os.path.join(RESOURCES_DIR, "stock_names.txt")
+RESOURCES_DIR = os.path.join(BASE_DIR, "historical_data", "Resources")
+
+STOCK_FILE = os.path.join(RESOURCES_DIR, "StockNamesWithSymbols.txt")
+
 
 
 def load_instrument_keys(path):
@@ -87,4 +89,4 @@ def fetch_all_ohlcv(date):
 
     print(f"✅ Saved safely to {output_file}")
 
-fetch_all_ohlcv("2025-12-19")
+fetch_all_ohlcv("2025-12-23")

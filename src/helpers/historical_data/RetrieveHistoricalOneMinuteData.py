@@ -5,13 +5,13 @@ from upstox_client.rest import ApiException
 ACCESS_TOKEN = "YOUR_ACCESS_TOKEN"
 API_VERSION = "2.0"
 
-INSTRUMENT_KEY = "NSE_EQ|INE006Z01016"   # RELIANCE INDUSTRIES
-TARGET_DATE = "2025-12-19"              # yyyy-mm-dd ONLY
+INSTRUMENT_KEY = "NSE_EQ|INE849A01020"   # RELIANCE INDUSTRIES
+TARGET_DATE = "2025-12-23"              # yyyy-mm-dd ONLY
 
 
 def save_1min_candles_to_file():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    resources_dir = os.path.join(base_dir, "Resources")
+    resources_dir = os.path.join(base_dir, "TemporaryResources")
     os.makedirs(resources_dir, exist_ok=True)
 
     output_file = os.path.join(resources_dir, "prices.txt")

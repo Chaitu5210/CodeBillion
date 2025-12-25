@@ -7,7 +7,7 @@ import upstox_client
 from upstox_client.rest import ApiException
 ACCESS_TOKEN = ""
 
-INSTRUMENT_FILE = "stocks_only.txt"
+INSTRUMENT_FILE = "StockNamesWithSymbols.txt"
 
 OUTPUT_FILE = "ltp_latest.txt"
 
